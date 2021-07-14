@@ -20,14 +20,17 @@ body{
      margin-bottom: 70px; 
 }
 .container{
-   
+/* width: 1200px; */
 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; 
 }
-
+.players-all{
+    display: grid;
+    justify-content: center;
+}
 
 .menu-item{
     width: 70%;
@@ -316,7 +319,13 @@ margin: 16px 16px 0px 16px;
         width: 125.8px;
         height: 29.98px;
     }
-
+    .players {
+        grid-template-columns: 50px 1fr 50px;
+        justify-content: center;
+      }
+      .player {
+        grid-column: 2/2;
+      }
 
     
 }
